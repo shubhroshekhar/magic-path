@@ -1,5 +1,5 @@
 const get = (msg) => {
-  console.log('msg', msg);
+  console.log('msg', msg?.data);
 }
 
 
