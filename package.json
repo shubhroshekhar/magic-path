@@ -1,0 +1,39 @@
+{
+  "name": "magic-path",
+  "version": "0.0.1",
+  "description": "Get Values from JS Objects magically",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "browserslist": [
+    "IE 11"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhroshekhar/magic-path.git"
+  },
+  "keywords": [
+    "object",
+    "object-path",
+    "object-values",
+    "values",
+    "from",
+    "obejct",
+    "values",
+    "from",
+    "array"
+  ],
+  "author": "Shubhro Shekhar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubhroshekhar/magic-path/issues"
+  },
+  "homepage": "https://github.com/shubhroshekhar/magic-path#readme",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
