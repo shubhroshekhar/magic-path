@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import merge from 'lodash/merge';
 import moment from 'moment';
 
 const formatDataAsKey = (key, val) => {
@@ -75,7 +75,7 @@ const mapResponse = (data, mappining = {}) => {
     let responseData = {};
     Object.keys(mappining).forEach(key => {
       const d = createObjectAsPerName(key, mapResponse(data, mappining[key]));
-      responseData = _.merge(responseData, d);
+      responseData = merge(responseData, d);
     });
     return responseData;
   } else if (typeof mappining === 'string' && mappining.length) {
