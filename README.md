@@ -45,7 +45,7 @@ const yourDataObject = {
     street: "baker street"
     } 
 }
-const newData = ("family.brother.name",'mycroft',yourDataObject);
+const newData = set("family.brother.name",'mycroft',yourDataObject);
 { 
     name: "sherlock holmes",
     family: {
