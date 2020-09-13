@@ -4,5 +4,10 @@
   "rules": {
       "semi": ["error", "always"],
       "quotes": ["error", "double"]
+  },
+  "globals": {
+    "require": true,
+    "__dirname": true,
+    "module": true
   }
 }
