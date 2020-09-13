@@ -9,5 +9,8 @@
     "require": true,
     "__dirname": true,
     "module": true
-  }
+  },
+  "env": {
+    "jest": true
+}
 }
