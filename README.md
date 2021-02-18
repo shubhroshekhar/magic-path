@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/shubhroshekhar/magic-path.svg?branch=master&status=created)](https://travis-ci.org/github/shubhroshekhar/magic-path)
+
 # what is this ?
 Get and Set Values from JS Objects magically.
 

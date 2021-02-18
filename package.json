@@ -1,6 +1,6 @@
 {
   "name": "magic-path",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Get Values from JS Objects magically",
   "main": "dist/index.js",
   "scripts": {
@@ -38,9 +38,11 @@
     "eslint": "^7.9.0",
     "jest": "^26.4.2",
     "lodash": "^4.17.20",
-    "moment": "^2.27.0",
     "path": "^0.12.7",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "dayjs": "^1.10.4"
   }
 }

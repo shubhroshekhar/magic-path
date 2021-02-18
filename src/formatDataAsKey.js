@@ -1,4 +1,4 @@
-import moment from "moment";
+import dayjs from 'dayjs';
 
 const formatDataAsKey = (key, val) => {
   const [FT, FF] = key.split("$");
@@ -11,7 +11,7 @@ const formatDataAsKey = (key, val) => {
     } catch (e) {
       console.log(e); // eslint-disable-line
     }
-    const mmm = new moment(val);
+    const mmm = dayjs(val);
     Object.keys(format).forEach(k => {
       if (format[k] === "DD") {
         returnObj[k] = `${mmm.get("D")}`;
@@ -27,9 +27,9 @@ const formatDataAsKey = (key, val) => {
     let format = FF || "DD/MM/YYYY";
     let returnDate = "";
     try {
-      returnDate = moment(val).format(format);
+      returnDate = dayjs(val).format(format);
     } catch (e) {
-      returnDate = moment(val).format("DD/MM/YYYY");
+      returnDate = dayjs(val).format("DD/MM/YYYY");
     }
     return returnDate;
   }

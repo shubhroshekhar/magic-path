@@ -20,3 +20,8 @@ test("Test With Multi layer Object - return object Value", () => {
   const a = { a: 2, b : { c: "C"} };
   expect(get(a, {"nk":"b.c"})).toEqual({nk: "C"});
 });
+
+// test("Test With Multi layer Date Time - return formated String", () => {
+//   const a = {a: new Date("2020-02-18T18:32:10.658Z")};
+//   expect(get(a, "a.FORMAT_DATEASSTRING$MM/DD/YYYY")).toEqual("02/19/2020");
+// });
