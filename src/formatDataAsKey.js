@@ -1,5 +1,4 @@
 import moment from "moment";
-import { consoleLog } from "dim-logs";
 
 const formatDataAsKey = (key, val) => {
   const [FT, FF] = key.split("$");
@@ -10,7 +9,7 @@ const formatDataAsKey = (key, val) => {
     try {
       format = JSON.parse(FF);
     } catch (e) {
-      consoleLog(e);
+      console.log(e); // eslint-disable-line
     }
     const mmm = new moment(val);
     Object.keys(format).forEach(k => {
