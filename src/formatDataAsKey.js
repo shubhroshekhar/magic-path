@@ -1,4 +1,4 @@
-import dayjs from 'dayjs';
+import dayjs from "dayjs";
 
 const formatDataAsKey = (key, val) => {
   const [FT, FF] = key.split("$");
